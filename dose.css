@@ -1,0 +1,135 @@
+* {
+  margin: 0%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  background-color: #f3f1f5;
+}
+
+h1 {
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+nav {
+  height: 100px;
+  width: 100vw;
+  background-color: rgb(11, 219, 150);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#body_rend {
+  display: flex;
+  flex-direction: row;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+#map {
+  /* margin: 10px;
+    display: flex;
+    background-color: beige; */
+  width: 500px;
+  height: 500px;
+}
+
+.input_pin {
+  outline: none;
+}
+.input_tab {
+  margin: 20px;
+}
+
+form button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  background: #38a3a5;
+  padding: 6px 14px 6px 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.details {
+  margin-left: 20px;
+  width: 700px;
+  height: 500px;
+  background-color: #e7eab5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.det {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.det ul li {
+  list-style: none;
+  color: #22577a;
+  /* text-shadow:  1px 1px 0px #423f42; */
+}
+
+.sub_point {
+  font-weight: 600;
+}
+
+
+
+.load.dopesf{
+ 
+  position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    background: rgba(223, 219, 219, 0.651);
+    backdrop-filter: blur(12.9px);
+    -webkit-backdrop-filter: blur(12.9px);
+    z-index: 10000;
+}
+.load_img{
+  display: none;
+}
+.load_img.dopesf{
+  display: block;
+  height: 70px;
+  width: 70px;
+  animation: roller 1s linear infinite;
+}
+
+
+
+
+@media (max-width: 740px) {
+  #body_rend,
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+@keyframes roller {
+  
+    100%{
+        transform: rotate(-360deg);
+    }
+}
